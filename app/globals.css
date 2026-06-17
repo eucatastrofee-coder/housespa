@@ -21,12 +21,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #D4AF37;
+  background: #B76E79;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #C5A028;
+  background: #C27D88;
 }
 
 /* Base resets */
@@ -70,7 +70,7 @@ html.lenis, html.lenis body {
 
 /* Selection */
 ::selection {
-  background-color: #D4AF37;
+  background-color: #B76E79;
   color: #050505;
 }
 
@@ -89,15 +89,15 @@ html.lenis, html.lenis body {
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.gold-border-glow {
-  border: 1px solid rgba(212, 175, 55, 0.15);
-  box-shadow: 0 0 15px rgba(212, 175, 55, 0.03);
+.rose-border-glow {
+  border: 1px solid rgba(183, 110, 121, 0.15);
+  box-shadow: 0 0 15px rgba(183, 110, 121, 0.03);
   transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.gold-border-glow:hover {
-  border: 1px solid rgba(212, 175, 55, 0.45);
-  box-shadow: 0 0 25px rgba(212, 175, 55, 0.08);
+.rose-border-glow:hover {
+  border: 1px solid rgba(183, 110, 121, 0.45);
+  box-shadow: 0 0 25px rgba(183, 110, 121, 0.08);
 }
 
 /* GSAP Animations utilities */
