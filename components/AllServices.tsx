@@ -96,7 +96,7 @@ export default function AllServices({ services }: AllServicesProps) {
               <div className="border-t border-white/[0.04] pt-6 mt-6 flex items-center justify-between">
                 <div>
                   <span className="block text-[10px] uppercase tracking-widest text-ivory-muted/40 mb-1">
-                    Inversión
+                    Desde
                   </span>
                   {service.price ? (
                     <span className="text-lg font-serif text-rose font-semibold">

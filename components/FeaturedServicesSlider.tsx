@@ -209,7 +209,7 @@ export default function FeaturedServicesSlider({ services }: FeaturedServicesSli
               <div className="border-t border-white/[0.05] pt-4 mt-2 flex items-center justify-between">
                 <div>
                   <span className="block text-[8px] uppercase tracking-widest text-ivory-muted/40 mb-0.5">
-                    Inversión
+                    Desde
                   </span>
                   {service.price ? (
                     <span className="text-base font-serif text-rose font-semibold">

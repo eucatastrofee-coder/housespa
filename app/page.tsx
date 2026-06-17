@@ -9,6 +9,7 @@ import Experience from "@/components/Experience";
 import EditorialTestimonials from "@/components/EditorialTestimonials";
 import FAQAccordion from "@/components/FAQAccordion";
 import ContactForm from "@/components/ContactForm";
+import BookingChannels from "@/components/BookingChannels";
 
 export default function Home() {
   return (
@@ -54,7 +55,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 9. Contact Section */}
+      {/* 9. Booking Channels Section */}
+      <BookingChannels />
+
+      {/* 10. Contact Section */}
       <section className="relative w-full py-28 bg-charcoal-deep border-b border-white/[0.02] z-20">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="text-center max-w-xl mx-auto mb-20">

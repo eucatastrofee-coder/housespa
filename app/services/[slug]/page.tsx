@@ -96,7 +96,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
               <div>
                 <span className="block text-[10px] uppercase text-ivory-muted/40 tracking-wider mb-0.5">
-                  Inversión
+                  Desde
                 </span>
                 {service.price ? (
                   <span className="text-xl font-serif text-rose font-semibold">
