@@ -24,7 +24,6 @@ export default function Home() {
       <Experience />
 
       {/* 4. Asymmetrical Featured Services Showcase */}
-      {/* @ts-expect-error Async Server Component */}
       <FeaturedServices />
 
       {/* 5. Stepper Section */}
