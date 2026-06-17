@@ -62,6 +62,25 @@ export const fallbackServices: Service[] = [
     ]
   },
   {
+    id: "fb-prenatal",
+    title: "Masaje Prenatal",
+    slug: "masaje-prenatal",
+    shortDescription: "Alivio y relajación ideal para futuras mamás, con técnicas suaves que reducen inflamaciones y dolores de espalda.",
+    description: "El masaje ideal para una nueva mamá, ritmo lento pases suaves que ayudan a la inflamación and dolores musculares.",
+    price: "990",
+    duration: "60/90/120",
+    image: "/imagenes/masaje-prenatal.png",
+    categories: ["Relajación", "Maternidad"],
+    featured: false,
+    bookingUrl: "https://wa.me/5215614379653?text=Hola,%20quiero%20reservar%20un%20Masaje%20Prenatal",
+    benefits: [
+      "Alivio de tensión lumbar e inflamación en piernas",
+      "Reducción de hormonas del estrés",
+      "Mejora de la calidad del sueño",
+      "Posicionamiento seguro para madre y bebé",
+    ]
+  },
+  {
     id: "fb-piedras-calientes",
     title: "Piedras Calientes",
     slug: "piedras-calientes",
@@ -97,25 +116,6 @@ export const fallbackServices: Service[] = [
       "Reducción de retención de líquidos e hinchazón",
       "Fortalece el sistema inmunológico",
       "Mejora la salud y textura de la piel",
-    ]
-  },
-  {
-    id: "fb-prenatal",
-    title: "Masaje Prenatal",
-    slug: "masaje-prenatal",
-    shortDescription: "Alivio y relajación ideal para futuras mamás, con técnicas suaves que reducen inflamaciones y dolores de espalda.",
-    description: "El masaje ideal para una nueva mamá, ritmo lento pases suaves que ayudan a la inflamación y dolores musculares.",
-    price: "990",
-    duration: "60/90/120",
-    image: "/imagenes/masaje-prenatal.png",
-    categories: ["Relajación", "Maternidad"],
-    featured: false,
-    bookingUrl: "https://wa.me/5215614379653?text=Hola,%20quiero%20reservar%20un%20Masaje%20Prenatal",
-    benefits: [
-      "Alivio de tensión lumbar e inflamación en piernas",
-      "Reducción de hormonas del estrés",
-      "Mejora de la calidad del sueño",
-      "Posicionamiento seguro para madre y bebé",
     ]
   },
   {
