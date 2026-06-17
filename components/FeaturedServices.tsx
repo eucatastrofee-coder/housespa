@@ -5,13 +5,13 @@ import FeaturedServicesSlider from "./FeaturedServicesSlider";
 export default async function FeaturedServices() {
   const allServices = await getServices();
   // Show all 6 services by default to keep the carousel rich and interactive
-  const displayServices = allServices;
+  const displayServices = allServices.slice(0, 4);
 
   return (
     <section className="relative w-full pt-28 pb-16 bg-charcoal-deep border-b border-white/[0.02] z-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-6">
           <div className="max-w-xl">
             <span className="text-rose uppercase tracking-[0.25em] text-xs font-semibold block mb-4">
               Colección Destacada
@@ -22,7 +22,7 @@ export default async function FeaturedServices() {
           </div>
           <Link
             href="/services"
-            className="text-xs uppercase tracking-[0.2em] font-semibold text-rose hover:text-rose-light border-b border-rose/30 hover:border-rose pb-1.5 transition-all duration-300"
+            className="text-xs uppercase tracking-[0.2em] font-semibold text-rose hover:text-charcoal-deep bg-transparent hover:bg-rose border border-rose/40 hover:border-rose px-6 py-3.5 rounded-full shadow-glass-sm hover:shadow-rose-border-glow transition-all duration-500 shrink-0"
           >
             Ver Todos los Masajes
           </Link>

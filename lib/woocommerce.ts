@@ -51,7 +51,7 @@ export const fallbackServices: Service[] = [
     price: "990",
     duration: "60/90/120",
     image: "/imagenes/masaje-deportivo.png",
-    categories: ["Deportivo", "Rendimiento"],
+    categories: ["Deportivo"],
     featured: false,
     bookingUrl: "https://wa.me/5215614379653?text=Hola,%20quiero%20reservar%20un%20Masaje%20Deportivo",
     benefits: [

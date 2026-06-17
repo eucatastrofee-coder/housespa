@@ -133,21 +133,21 @@ export default function FeaturedServicesSlider({ services }: FeaturedServicesSli
       <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-charcoal-deep to-transparent z-20 pointer-events-none hidden lg:block" />
 
       {/* Navigation Arrows (Visible only on hover or desktop) */}
-      <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between px-6 sm:px-12 z-30 pointer-events-none">
+      <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between px-2 sm:px-8 z-30 pointer-events-none">
         <button
           onClick={() => scroll("left")}
-          className="w-12 h-12 rounded-full glassmorphism flex items-center justify-center text-ivory hover:text-rose hover:border-rose/50 border border-white/10 shadow-glass-sm pointer-events-auto transition-all duration-300 hover:scale-110 active:scale-95"
+          className="w-12 h-12 rounded-full bg-rose/15 hover:bg-rose border border-rose/35 hover:border-rose text-rose hover:text-charcoal-deep backdrop-blur-md shadow-luxury-sm pointer-events-auto transition-all duration-300 hover:scale-115 active:scale-90 hover:shadow-rose-border-glow flex items-center justify-center"
           aria-label="Anterior masaje"
         >
-          <ChevronLeft className="w-5 h-5" />
+          <ChevronLeft className="w-5 h-5 transition-transform duration-300" />
         </button>
 
         <button
           onClick={() => scroll("right")}
-          className="w-12 h-12 rounded-full glassmorphism flex items-center justify-center text-ivory hover:text-rose hover:border-rose/50 border border-white/10 shadow-glass-sm pointer-events-auto transition-all duration-300 hover:scale-110 active:scale-95"
+          className="w-12 h-12 rounded-full bg-rose/15 hover:bg-rose border border-rose/35 hover:border-rose text-rose hover:text-charcoal-deep backdrop-blur-md shadow-luxury-sm pointer-events-auto transition-all duration-300 hover:scale-115 active:scale-90 hover:shadow-rose-border-glow flex items-center justify-center"
           aria-label="Siguiente masaje"
         >
-          <ChevronRight className="w-5 h-5" />
+          <ChevronRight className="w-5 h-5 transition-transform duration-300" />
         </button>
       </div>
 
