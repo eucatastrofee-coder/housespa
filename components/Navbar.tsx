@@ -51,20 +51,17 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="relative z-50 flex items-center gap-2 group">
-            <div className="relative w-10 h-10 overflow-hidden rounded-full border border-gold/10 flex items-center justify-center bg-charcoal/80 transition-all duration-500 group-hover:border-gold/30">
+          <Link href="/" className="relative z-50 flex items-center group" aria-label="HouseSpa Inicio">
+            <div className="relative w-12 h-12 overflow-hidden rounded-full border border-rose/15 flex items-center justify-center bg-charcoal/80 transition-all duration-500 group-hover:border-rose/40 shadow-luxury-sm">
               <Image
                 src="/logo.png"
                 alt="HouseSpa Logo"
                 fill
-                sizes="40px"
-                className="object-contain p-1.5 transition-transform duration-700 group-hover:scale-110"
+                sizes="48px"
+                className="object-contain p-2 transition-transform duration-700 group-hover:scale-110"
                 priority
               />
             </div>
-            <span className="font-serif text-lg tracking-[0.2em] uppercase text-ivory transition-colors duration-500 group-hover:text-gold">
-              HouseSpa
-            </span>
           </Link>
 
           {/* Desktop Navigation Links */}
@@ -75,13 +72,13 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="relative text-sm uppercase tracking-[0.15em] text-ivory/80 hover:text-gold transition-colors duration-300 py-2"
+                  className="relative text-sm uppercase tracking-[0.15em] text-ivory/80 hover:text-rose transition-colors duration-300 py-2"
                 >
                   {link.name}
                   {isActive && (
                     <motion.span
                       layoutId="activeNavIndicator"
-                      className="absolute bottom-0 left-0 w-full h-[1px] bg-gold-shimmer"
+                      className="absolute bottom-0 left-0 w-full h-[1px] bg-rose-shimmer"
                       transition={{ type: "spring", stiffness: 380, damping: 30 }}
                     />
                   )}
@@ -94,18 +91,18 @@ export default function Navbar() {
           <div className="hidden md:flex items-center">
             <Link
               href="/services"
-              className="group relative flex items-center gap-2 overflow-hidden rounded-full bg-transparent border border-gold/40 hover:border-gold px-6 py-2.5 text-xs uppercase tracking-[0.2em] font-medium text-ivory transition-all duration-300"
+              className="group relative flex items-center gap-2 overflow-hidden rounded-full bg-transparent border border-rose/40 hover:border-rose px-6 py-2.5 text-xs uppercase tracking-[0.2em] font-medium text-ivory transition-all duration-300"
             >
-              <span className="absolute inset-0 bg-gold/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <span className="absolute inset-0 bg-rose/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <span className="relative z-10">Reservar Ahora</span>
-              <ArrowRight className="w-3.5 h-3.5 text-gold group-hover:translate-x-1 transition-transform duration-300" />
+              <ArrowRight className="w-3.5 h-3.5 text-rose group-hover:translate-x-1 transition-transform duration-300" />
             </Link>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="relative z-50 md:hidden p-2 text-ivory/85 hover:text-gold transition-colors focus:outline-none"
+            className="relative z-50 md:hidden p-2 text-ivory/85 hover:text-rose transition-colors focus:outline-none"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -136,7 +133,7 @@ export default function Navbar() {
                       href={link.href}
                       className={cn(
                         "text-3xl font-serif tracking-widest transition-colors duration-300",
-                        isActive ? "text-gold" : "text-ivory/80 hover:text-gold"
+                        isActive ? "text-rose" : "text-ivory/80 hover:text-rose"
                       )}
                     >
                       {link.name}
@@ -154,7 +151,7 @@ export default function Navbar() {
               >
                 <Link
                   href="/services"
-                  className="flex items-center justify-between w-full rounded-full bg-gold hover:bg-gold-dark px-8 py-4 text-sm uppercase tracking-[0.2em] font-semibold text-charcoal-deep transition-all duration-300"
+                  className="flex items-center justify-between w-full rounded-full bg-rose hover:bg-rose-dark px-8 py-4 text-sm uppercase tracking-[0.2em] font-semibold text-charcoal-deep transition-all duration-300"
                 >
                   <span>Reservar Ahora</span>
                   <ArrowRight className="w-4 h-4 text-charcoal-deep" />
