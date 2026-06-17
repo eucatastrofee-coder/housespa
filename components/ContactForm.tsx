@@ -51,8 +51,8 @@ export default function ContactForm() {
                 <span className="block text-[10px] uppercase text-ivory-muted/40 tracking-wider mb-1">
                   Atención Telefónica
                 </span>
-                <a href="tel:+5215500000000" className="text-sm text-ivory hover:text-rose transition-colors duration-300 font-medium">
-                  +52 1 55 0000 0000
+                <a href="tel:+5215614379653" className="text-sm text-ivory hover:text-rose transition-colors duration-300 font-medium">
+                  +52 1 56 1437 9653
                 </a>
               </div>
             </li>

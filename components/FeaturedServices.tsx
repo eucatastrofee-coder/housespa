@@ -5,7 +5,7 @@ import FeaturedServicesSlider from "./FeaturedServicesSlider";
 export default async function FeaturedServices() {
   const allServices = await getServices();
   // Show all 6 services by default to keep the carousel rich and interactive
-  const displayServices = allServices.slice(0, 6);
+  const displayServices = allServices;
 
   return (
     <section className="relative w-full pt-28 pb-16 bg-charcoal-deep border-b border-white/[0.02] z-20 overflow-hidden">

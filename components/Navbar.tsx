@@ -52,13 +52,13 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="relative z-50 flex items-center group" aria-label="HouseSpa Inicio">
-            <div className="relative w-12 h-12 overflow-hidden rounded-full border border-rose/15 flex items-center justify-center bg-charcoal/80 transition-all duration-500 group-hover:border-rose/40 shadow-luxury-sm">
+            <div className="relative w-24 h-16 transition-all duration-500">
               <Image
                 src="/logo.png"
                 alt="HouseSpa Logo"
                 fill
-                sizes="48px"
-                className="object-contain p-2 transition-transform duration-700 group-hover:scale-110"
+                sizes="96px"
+                className="object-contain transition-transform duration-700 group-hover:scale-105"
                 priority
               />
             </div>

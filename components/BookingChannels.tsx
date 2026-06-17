@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { Phone, Globe, MessageSquare } from "lucide-react";
 
 export default function BookingChannels() {
-  const phoneLink = "tel:+5215500000000";
-  const whatsappLink = "https://wa.me/5215500000000?text=Hola%20HouseSpa,%20me%20gustaría%20solicitar%20información%20para%20agendar%20un%20masaje%20a%20domicilio.";
+  const phoneLink = "tel:+5215614379653";
+  const whatsappLink = "https://wa.me/5215614379653?text=Hola%20HouseSpa,%20me%20gustaría%20solicitar%20información%20para%20agendar%20un%20masaje%20a%20domicilio.";
   const onlineLink = "/services";
 
   const channels = [

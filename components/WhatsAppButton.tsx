@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { MessageSquare } from "lucide-react";
 
 export default function WhatsAppButton() {
-  const whatsAppNumber = "5215500000000"; // WooCommerce fallback booking number
+  const whatsAppNumber = "5215614379653"; // WooCommerce fallback booking number
   const initialText = encodeURIComponent(
     "Hola HouseSpa, me gustaría solicitar información para agendar un masaje a domicilio."
   );

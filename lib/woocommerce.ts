@@ -15,7 +15,7 @@ export const fallbackServices: Service[] = [
     image: "/imagenes/descarga.jpg",
     categories: ["Relajación"],
     featured: true,
-    bookingUrl: "https://wa.me/5215500000000?text=Hola,%20quiero%20reservar%20un%20Masaje%20Relajante",
+    bookingUrl: "https://wa.me/5215614379653?text=Hola,%20quiero%20reservar%20un%20Masaje%20Relajante",
     benefits: [
       "Alivio del estrés diario",
       "Mejoría en tensiones musculares leves",
@@ -34,7 +34,7 @@ export const fallbackServices: Service[] = [
     image: "/imagenes/descarga (1).jpg",
     categories: ["Terapéutico"],
     featured: true,
-    bookingUrl: "https://wa.me/5215500000000?text=Hola,%20quiero%20reservar%20un%20Masaje%20Descontracturante",
+    bookingUrl: "https://wa.me/5215614379653?text=Hola,%20quiero%20reservar%20un%20Masaje%20Descontracturante",
     benefits: [
       "Eliminación de contracturas musculares",
       "Liberación de puntos gatillo",
@@ -50,10 +50,10 @@ export const fallbackServices: Service[] = [
     description: "Dirigido a deportistas de cualquier intensidad, el terapeuta se centra en necesidades específicas de cada cliente el ritmo del masaje es constante presión de media a profunda.",
     price: "990",
     duration: "60/90/120",
-    image: "/imagenes/descarga (2).jpg",
+    image: "/imagenes/masaje-deportivo.png",
     categories: ["Deportivo", "Rendimiento"],
     featured: false,
-    bookingUrl: "https://wa.me/5215500000000?text=Hola,%20quiero%20reservar%20un%20Masaje%20Deportivo",
+    bookingUrl: "https://wa.me/5215614379653?text=Hola,%20quiero%20reservar%20un%20Masaje%20Deportivo",
     benefits: [
       "Mejora del rendimiento muscular",
       "Aceleración de la recuperación post-entrenamiento",
@@ -69,10 +69,10 @@ export const fallbackServices: Service[] = [
     description: "Consiste en la aplicación de piedras de diferentes tamaños a distintas temperaturas sobre la piel a un ritmo lento siendo su principal función relajar.",
     price: "1590", // Only 90 min
     duration: "90",
-    image: "/imagenes/descarga (3).jpg",
+    image: "/imagenes/masaje-de-piedras-calientes.png",
     categories: ["Especialidades"],
     featured: true,
-    bookingUrl: "https://wa.me/5215500000000?text=Hola,%20quiero%20reservar%20un%20Masaje%20de%20Piedras%20Calientes",
+    bookingUrl: "https://wa.me/5215614379653?text=Hola,%20quiero%20reservar%20un%20Masaje%20de%20Piedras%20Calientes",
     benefits: [
       "Relajación muscular térmica profunda",
       "Reducción notable de la ansiedad y el estrés",
@@ -91,7 +91,7 @@ export const fallbackServices: Service[] = [
     image: "/imagenes/descarga (4).jpg",
     categories: ["Terapéutico", "Salud"],
     featured: false,
-    bookingUrl: "https://wa.me/5215500000000?text=Hola,%20quiero%20reservar%20un%20Drenaje%20Linfático",
+    bookingUrl: "https://wa.me/5215614379653?text=Hola,%20quiero%20reservar%20un%20Drenaje%20Linfático",
     benefits: [
       "Depuración del sistema linfático",
       "Reducción de retención de líquidos e hinchazón",
@@ -107,15 +107,110 @@ export const fallbackServices: Service[] = [
     description: "El masaje ideal para una nueva mamá, ritmo lento pases suaves que ayudan a la inflamación y dolores musculares.",
     price: "990",
     duration: "60/90/120",
-    image: "/imagenes/descarga (5).jpg",
+    image: "/imagenes/masaje-prenatal.png",
     categories: ["Relajación", "Maternidad"],
     featured: false,
-    bookingUrl: "https://wa.me/5215500000000?text=Hola,%20quiero%20reservar%20un%20Masaje%20Prenatal",
+    bookingUrl: "https://wa.me/5215614379653?text=Hola,%20quiero%20reservar%20un%20Masaje%20Prenatal",
     benefits: [
       "Alivio de tensión lumbar e inflamación en piernas",
       "Reducción de hormonas del estrés",
       "Mejora de la calidad del sueño",
       "Posicionamiento seguro para madre y bebé",
+    ]
+  },
+  {
+    id: "fb-ventosas",
+    title: "Masaje con Ventosas",
+    slug: "masaje-con-ventosas",
+    shortDescription: "Técnica de presión media con pases precisos y ventosas de vidrio para descontracturar fibras y mejorar la circulación.",
+    description: "Técnica de masaje de presión media con pases precisos para descontracturar fibras musculares, acompañada de ventosas de vidrio aplicadas mediante calor controlado. Ayuda a aliviar tensiones, mejorar la circulación, favorecer la recuperación muscular y brindar una profunda sensación de bienestar y relajación.",
+    price: "1300",
+    duration: "60",
+    image: "/imagenes/masaje-de-ventosas.png",
+    categories: ["Terapéutico", "Relajación"],
+    featured: true,
+    bookingUrl: "https://wa.me/5215614379653?text=Hola,%20quiero%20reservar%20un%20Masaje%20con%20Ventosas",
+    benefits: [
+      "Alivio de tensiones musculares profundas",
+      "Mejora de la circulación sanguínea",
+      "Favorece la recuperación muscular rápida",
+      "Sensación de bienestar y relajación profunda"
+    ]
+  },
+  {
+    id: "fb-post-quirurgica",
+    title: "Terapia Post Quirúrgica",
+    slug: "terapia-post-quirurgica",
+    shortDescription: "Protocolo integral postoperatorio: drenaje linfático, ultrasonido, radiofrecuencia y vendaje para acelerar la cicatrización.",
+    description: "Después de una cirugía de remodelación corporal, gran parte del resultado final depende de una adecuada rehabilitación postoperatoria. Nuestro protocolo está diseñado para favorecer una recuperación segura, reducir la inflamación y optimizar los resultados obtenidos. Incluye drenaje linfático manual, ultrasonido terapéutico (USG), presoterapia, radiofrecuencia, curaciones y aplicación de vendaje kinesiológico, herramientas que ayudan a acelerar la recuperación, mejorar la cicatrización y definir mejor los contornos corporales.",
+    price: "1300",
+    duration: "60",
+    image: "/imagenes/terapia-post-quirurgica.png",
+    categories: ["Terapéutico", "Rehabilitación"],
+    featured: true,
+    bookingUrl: "https://wa.me/5215614379653?text=Hola,%20quiero%20reservar%20una%20Terapia%20Post%20Quirúrgica",
+    benefits: [
+      "Reducción de inflamación y edemas",
+      "Aceleración de la cicatrización interna",
+      "Definición mejorada de contornos corporales",
+      "Prevención de fibrosis tisular"
+    ]
+  },
+  {
+    id: "fb-consulta-fisioterapia",
+    title: "Consulta Fisioterapia",
+    slug: "consulta-fisioterapia",
+    shortDescription: "Rehabilitación a domicilio personalizada para mejorar movilidad, aliviar dolor y acelerar la recuperación física.",
+    description: "Recupera tu bienestar sin salir de casa. Aplicamos múltiples técnicas de rehabilitación enfocadas en mejorar la movilidad, fortalecer músculos y articulaciones, aliviar molestias y acelerar los procesos de recuperación. Cada sesión se adapta a tus necesidades específicas, ayudándote a recuperar funcionalidad, disminuir el dolor y mejorar tu calidad de vida de manera segura y profesional.",
+    price: "1000",
+    duration: "60",
+    image: "/imagenes/consulta-fisioterapia.png",
+    categories: ["Fisioterapia", "Rehabilitación"],
+    featured: false,
+    bookingUrl: "https://wa.me/5215614379653?text=Hola,%20quiero%20reservar%20una%20Consulta%20de%20Fisioterapia",
+    benefits: [
+      "Evaluación y tratamiento personalizado",
+      "Mejora de la movilidad articular",
+      "Fortalecimiento de músculos clave",
+      "Disminución del dolor de manera profesional"
+    ]
+  },
+  {
+    id: "fb-yoga-facial",
+    title: "Yoga Facial",
+    slug: "yoga-facial",
+    shortDescription: "Estimulación y tonificación de músculos faciales para definir contornos, drenar líquidos y rejuvenecer la piel.",
+    description: "Técnica natural enfocada en estimular y movilizar los músculos del rostro mediante maniobras específicas que ayudan a tonificar la piel, favorecer el drenaje de líquidos retenidos y mejorar la circulación facial. Contribuye a definir los contornos del rostro, mejorar su apariencia, brindar mayor luminosidad y promover una sensación de frescura y rejuvenecimiento de forma relajante y no invasiva.",
+    price: "700",
+    duration: "40",
+    image: "/imagenes/yoga-facial.png",
+    categories: ["Estética", "Relajación"],
+    featured: false,
+    bookingUrl: "https://wa.me/5215614379653?text=Hola,%20quiero%20reservar%20una%20sesión%20de%20Yoga%20Facial",
+    benefits: [
+      "Tonificación natural de la piel del rostro",
+      "Drenaje de líquidos retenidos y desinflamación",
+      "Estimulación de la circulación facial",
+      "Mayor luminosidad y frescura rejuvenecedora"
+    ]
+  },
+  {
+    id: "fb-reflexologia-podal",
+    title: "Reflexología Podal",
+    slug: "reflexologia-podal",
+    shortDescription: "Estimulación de puntos reflexológicos en pies para equilibrar el organismo, reducir estrés y mejorar circulación.",
+    description: "Terapia basada en la estimulación de puntos específicos ubicados en las plantas de los pies, los cuales están relacionados con diferentes órganos y sistemas del cuerpo. A través de técnicas de presión controlada, ayuda a promover el equilibrio general, favorecer la relajación y estimular los procesos naturales de bienestar. Sus beneficios pueden reflejarse en todo el organismo, contribuyendo a disminuir el estrés, mejorar la circulación y generar una agradable sensación de armonía y descanso.",
+    price: "900",
+    duration: "50",
+    image: "/imagenes/reflexologia-podal.png",
+    categories: ["Terapéutico", "Relajación"],
+    featured: false,
+    bookingUrl: "https://wa.me/5215614379653?text=Hola,%20quiero%20reservar%20una%20sesión%20de%20Reflexología%20Podal",
+    benefits: [
+      "Disminución del estrés y la tensión mental",
+      "Estimulación de procesos naturales de bienestar",
+      "Mejora de la circulación en extremidades",
+      "Genera agradable armonía y descanso"
     ]
   }
 ];

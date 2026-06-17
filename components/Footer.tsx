@@ -11,17 +11,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 mb-16">
           {/* Logo & Manifesto */}
           <div className="md:col-span-2 pr-0 md:pr-12">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="relative w-8 h-8 rounded-full border border-rose/20 flex items-center justify-center bg-charcoal-light">
+            <div className="flex items-center mb-6">
+              <div className="relative w-44 h-32">
                 <Image
                   src="/logo.png"
                   alt="HouseSpa Logo"
-                  width={20}
-                  height={20}
-                  className="object-contain"
+                  fill
+                  sizes="176px"
+                  className="object-contain object-left"
                 />
               </div>
-              <span className="font-serif text-md tracking-[0.25em] uppercase text-rose">HouseSpa</span>
             </div>
             <p className="font-sans text-sm text-ivory-muted leading-relaxed max-w-sm mb-6">
               Servicios exclusivos de masaje profesional y rituales de bienestar entregados directamente en tu hogar, residencia, hotel u oficina. Sin traslados, sin estrés, solo bienestar absoluto.
@@ -72,8 +71,8 @@ export default function Footer() {
                 <Phone className="w-4 h-4 text-rose shrink-0 mt-0.5" />
                 <div>
                   <span className="block text-xs uppercase text-ivory-muted/50 tracking-wider">Atención Directa</span>
-                  <a href="tel:+5215500000000" className="hover:text-rose transition-colors">
-                    +52 1 55 0000 0000
+                  <a href="tel:+5215614379653" className="hover:text-rose transition-colors">
+                    +52 1 56 1437 9653
                   </a>
                 </div>
               </li>
