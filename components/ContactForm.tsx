@@ -33,7 +33,7 @@ export default function ContactForm() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
       {/* Contact Details Column */}
-      <div className="lg:col-span-5 flex flex-col justify-between p-8 md:p-12 rounded-3xl bg-charcoal border border-white/[0.03] shadow-luxury-md">
+      <div className="lg:col-span-5 flex flex-col justify-between p-8 md:p-12 rounded-3xl glassmorphism shadow-luxury-md">
         <div>
           <span className="text-rose uppercase tracking-[0.3em] text-xs font-semibold block mb-4">
             Información
@@ -94,7 +94,7 @@ export default function ContactForm() {
       </div>
 
       {/* Contact Form Column */}
-      <div className="lg:col-span-7 p-8 md:p-12 rounded-3xl bg-charcoal-light border border-white/[0.03] shadow-luxury-md flex flex-col justify-center">
+      <div className="lg:col-span-7 p-8 md:p-12 rounded-3xl glassmorphism shadow-luxury-md flex flex-col justify-center">
         {status === "success" ? (
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}

@@ -59,7 +59,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             </div>
             
             {/* Vetting Vow badge */}
-            <div className="p-6 rounded-2xl bg-charcoal border border-white/[0.02] flex items-start gap-4">
+            <div className="p-6 rounded-2xl glassmorphism flex items-start gap-4">
               <ShieldCheck className="w-5 h-5 text-rose shrink-0 mt-0.5" />
               <div className="text-xs">
                 <span className="font-semibold block text-ivory mb-1">Garantía HouseSpa</span>

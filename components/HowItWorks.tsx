@@ -56,7 +56,7 @@ export default function HowItWorks() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ delay: idx * 0.15, duration: 1.0, ease: [0.16, 1, 0.3, 1] }}
-                className="relative p-8 rounded-3xl bg-charcoal/40 border border-white/[0.03] hover:border-rose/15 transition-colors duration-500 flex flex-col justify-between overflow-hidden shadow-luxury-sm"
+                className="relative p-8 rounded-3xl glassmorphism hover:border-rose/30 transition-all duration-500 flex flex-col justify-between overflow-hidden shadow-luxury-md"
               >
                 {/* Asymmetrical background watermark step number */}
                 <span className="absolute -top-4 -right-2 text-7xl md:text-8xl font-serif font-bold text-white/[0.01] select-none">

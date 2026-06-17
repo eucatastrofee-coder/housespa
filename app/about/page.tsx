@@ -47,7 +47,7 @@ export default function AboutPage() {
           </div>
 
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-8">
-            <div className="p-6 rounded-2xl bg-charcoal-light border border-white/[0.02] shadow-luxury-sm">
+            <div className="p-6 rounded-2xl glassmorphism shadow-luxury-md">
               <div className="w-10 h-10 rounded-full flex items-center justify-center bg-rose/5 text-rose border border-rose/10 mb-4">
                 <Award className="w-5 h-5" />
               </div>
@@ -57,7 +57,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-charcoal-light border border-white/[0.02] shadow-luxury-sm">
+            <div className="p-6 rounded-2xl glassmorphism shadow-luxury-md">
               <div className="w-10 h-10 rounded-full flex items-center justify-center bg-rose/5 text-rose border border-rose/10 mb-4">
                 <ShieldCheck className="w-5 h-5" />
               </div>
@@ -67,7 +67,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-charcoal-light border border-white/[0.02] shadow-luxury-sm">
+            <div className="p-6 rounded-2xl glassmorphism shadow-luxury-md">
               <div className="w-10 h-10 rounded-full flex items-center justify-center bg-rose/5 text-rose border border-rose/10 mb-4">
                 <ShieldCheck className="w-5 h-5" />
               </div>
@@ -77,7 +77,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-charcoal-light border border-white/[0.02] shadow-luxury-sm">
+            <div className="p-6 rounded-2xl glassmorphism shadow-luxury-md">
               <div className="w-10 h-10 rounded-full flex items-center justify-center bg-rose/5 text-rose border border-rose/10 mb-4">
                 <Smile className="w-5 h-5" />
               </div>
@@ -90,7 +90,7 @@ export default function AboutPage() {
         </div>
 
         {/* Mobile Philosophy Section */}
-        <div className="p-8 md:p-12 rounded-3xl bg-charcoal border border-white/[0.03] shadow-luxury-md flex flex-col md:flex-row items-center gap-12">
+        <div className="p-8 md:p-12 rounded-3xl glassmorphism shadow-luxury-md flex flex-col md:flex-row items-center gap-12">
           <div className="relative w-full md:w-[40%] aspect-[4/3] rounded-2xl overflow-hidden shrink-0 border border-white/5">
             <Image
               src="/imagenes/descarga (14).jpg"

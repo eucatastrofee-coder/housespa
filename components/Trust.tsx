@@ -56,7 +56,7 @@ export default function Trust() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ delay: idx * 0.15, duration: 0.8, ease: "easeOut" }}
-                  className="p-6 rounded-2xl bg-charcoal-light border border-white/[0.02] hover:border-rose/25 transition-all duration-500 shadow-luxury-sm hover:shadow-luxury-md group"
+                  className="p-6 rounded-2xl glassmorphism hover:border-rose/35 transition-all duration-500 shadow-luxury-md hover:shadow-luxury-lg group"
                 >
                   <div className="w-10 h-10 rounded-full flex items-center justify-center bg-rose/5 text-rose border border-rose/10 group-hover:bg-rose/10 group-hover:text-rose-light transition-all duration-300 mb-5">
                     <Icon className="w-5 h-5" />

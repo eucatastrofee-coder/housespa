@@ -69,7 +69,7 @@ export default function FAQAccordion() {
           return (
             <div
               key={faq.id}
-              className="rounded-2xl bg-charcoal-light border border-white/[0.03] overflow-hidden transition-all duration-300 hover:border-white/10"
+              className="rounded-2xl glassmorphism overflow-hidden transition-all duration-300 hover:border-white/15"
             >
               {/* Accordion Trigger */}
               <button

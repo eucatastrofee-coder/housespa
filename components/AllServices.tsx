@@ -55,7 +55,7 @@ export default function AllServices({ services }: AllServicesProps) {
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
               key={service.slug}
-              className="group relative rounded-3xl bg-charcoal-light border border-white/[0.03] hover:border-rose/20 p-6 flex flex-col justify-between shadow-luxury-sm hover:shadow-luxury-md transition-all duration-500"
+              className="group relative rounded-3xl glassmorphism hover:border-rose/35 p-6 flex flex-col justify-between shadow-luxury-md hover:shadow-luxury-lg transition-all duration-500"
             >
               {/* Rose Shimmer Edge Line */}
               <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-rose/0 to-transparent group-hover:via-rose/40 transition-all duration-700 rounded-t-3xl" />
