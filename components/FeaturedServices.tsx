@@ -4,10 +4,8 @@ import FeaturedServicesSlider from "./FeaturedServicesSlider";
 
 export default async function FeaturedServices() {
   const allServices = await getServices();
-  const featured = allServices.filter(s => s.featured);
-
-  // If no services are marked featured, fall back to first 5 products
-  const displayServices = featured.length > 0 ? featured : allServices.slice(0, 5);
+  // Show all 6 services by default to keep the carousel rich and interactive
+  const displayServices = allServices.slice(0, 6);
 
   return (
     <section className="relative w-full py-28 bg-charcoal-deep border-b border-white/[0.02] z-20 overflow-hidden">

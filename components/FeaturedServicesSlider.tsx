@@ -3,7 +3,7 @@
 import { useRef, useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Clock, ArrowRight } from "lucide-react";
+import { Clock, ArrowRight, ChevronLeft, ChevronRight, Hand } from "lucide-react";
 import { Service } from "@/lib/types";
 import { formatPrice } from "@/lib/utils";
 
@@ -18,6 +18,9 @@ export default function FeaturedServicesSlider({ services }: FeaturedServicesSli
   const [isDragging, setIsDragging] = useState(false);
   const startX = useRef(0);
   const scrollLeft = useRef(0);
+  
+  // Active slide index for pagination dots
+  const [activeCardIndex, setActiveCardIndex] = useState(0);
 
   // Apply the 3D arc calculations on scroll
   const handleScroll = () => {
@@ -33,16 +36,24 @@ export default function FeaturedServicesSlider({ services }: FeaturedServicesSli
       const maxDistance = container.offsetWidth / 1.5;
       const ratio = Math.max(-1, Math.min(1, distanceFromCenter / maxDistance));
 
-      // Mathematical 3D transformations for the fan/arc effect
-      const rotateY = ratio * -20; // 3D rotation yaw
-      const rotateZ = ratio * 3;   // Roll tilt
-      const translateY = Math.abs(ratio) * 25; // Dip cards down on the sides
-      const scale = 1 - Math.abs(ratio) * 0.08; // Slightly scale down sides
-      const opacity = 1 - Math.abs(ratio) * 0.15; // Soft opacity fade on sides
+      // 3D rotations for the fan/arc effect
+      const rotateY = ratio * -20; 
+      const rotateZ = ratio * 3;   
+      const translateY = Math.abs(ratio) * 25; 
+      const scale = 1 - Math.abs(ratio) * 0.08; 
+      const opacity = 1 - Math.abs(ratio) * 0.15; 
 
       cardEl.style.transform = `translateY(${translateY}px) scale(${scale}) rotateY(${rotateY}deg) rotateZ(${rotateZ}deg)`;
       cardEl.style.opacity = opacity;
     });
+
+    // Calculate active dot index
+    if (cards.length > 0) {
+      const cardWidth = (cards[0] as HTMLElement).offsetWidth;
+      const gap = 32; // gap-8 is 32px
+      const index = Math.round(container.scrollLeft / (cardWidth + gap));
+      setActiveCardIndex(Math.max(0, Math.min(services.length - 1, index)));
+    }
   };
 
   // Drag handlers
@@ -68,16 +79,30 @@ export default function FeaturedServicesSlider({ services }: FeaturedServicesSli
     const container = scrollRef.current;
     if (!container) return;
     const x = e.pageX - container.offsetLeft;
-    const walk = (x - startX.current) * 1.5; // Drag speed multiplier
+    const walk = (x - startX.current) * 1.5; 
     container.scrollLeft = scrollLeft.current - walk;
   };
 
-  // Run on mount and scroll
+  // Click handler for navigation arrows
+  const scroll = (direction: "left" | "right") => {
+    const container = scrollRef.current;
+    if (!container) return;
+
+    const cards = container.querySelectorAll(".arc-card");
+    if (cards.length === 0) return;
+
+    const cardWidth = (cards[0] as HTMLElement).offsetWidth;
+    const gap = 32;
+    const scrollAmount = (cardWidth + gap) * (direction === "left" ? -1 : 1);
+    
+    container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+  };
+
+  // Run on mount and updates
   useEffect(() => {
     const container = scrollRef.current;
     if (!container) return;
 
-    // Run initial alignment
     handleScroll();
 
     container.addEventListener("scroll", handleScroll);
@@ -92,10 +117,31 @@ export default function FeaturedServicesSlider({ services }: FeaturedServicesSli
   return (
     <div className="relative w-full overflow-visible py-8">
       {/* Scroll indicator overlay guides */}
-      <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-charcoal-deep to-transparent z-20 pointer-events-none hidden md:block" />
-      <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-charcoal-deep to-transparent z-20 pointer-events-none hidden md:block" />
+      <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-charcoal-deep to-transparent z-20 pointer-events-none hidden lg:block" />
+      <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-charcoal-deep to-transparent z-20 pointer-events-none hidden lg:block" />
 
-      {/* Dragging viewport */}
+      {/* Navigation Arrows (Visible only on hover or desktop) */}
+      <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between px-6 sm:px-12 z-30 pointer-events-none">
+        <button
+          onClick={() => scroll("left")}
+          className="w-12 h-12 rounded-full glassmorphism flex items-center justify-center text-ivory hover:text-rose hover:border-rose/50 border border-white/10 shadow-glass-sm pointer-events-auto transition-all duration-300 hover:scale-110 active:scale-95 disabled:opacity-30"
+          disabled={activeCardIndex === 0}
+          aria-label="Anterior masaje"
+        >
+          <ChevronLeft className="w-5 h-5" />
+        </button>
+
+        <button
+          onClick={() => scroll("right")}
+          className="w-12 h-12 rounded-full glassmorphism flex items-center justify-center text-ivory hover:text-rose hover:border-rose/50 border border-white/10 shadow-glass-sm pointer-events-auto transition-all duration-300 hover:scale-110 active:scale-95 disabled:opacity-30"
+          disabled={activeCardIndex === services.length - 1}
+          aria-label="Siguiente masaje"
+        >
+          <ChevronRight className="w-5 h-5" />
+        </button>
+      </div>
+
+      {/* Dragging viewport container */}
       <div
         ref={scrollRef}
         onMouseDown={handleMouseDown}
@@ -116,7 +162,7 @@ export default function FeaturedServicesSlider({ services }: FeaturedServicesSli
           >
             {/* Background cover image */}
             <div className="absolute inset-0 w-full h-full z-0 select-none">
-              <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/30 to-black/10 z-10" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/35 to-black/10 z-10" />
               <Image
                 src={service.image}
                 alt={service.title}
@@ -153,14 +199,14 @@ export default function FeaturedServicesSlider({ services }: FeaturedServicesSli
               <div className="border-t border-white/[0.05] pt-4 mt-2 flex items-center justify-between">
                 <div>
                   <span className="block text-[8px] uppercase tracking-widest text-ivory-muted/40 mb-0.5">
-                    Precio base
+                    Inversión
                   </span>
                   {service.price ? (
                     <span className="text-base font-serif text-rose font-semibold">
                       {formatPrice(service.price)}
                     </span>
                   ) : (
-                    <span className="text-[9px] uppercase tracking-wider text-ivory-muted/50">
+                    <span className="text-[9px] uppercase tracking-wider text-rose/60">
                       Consulte precios
                     </span>
                   )}
@@ -171,7 +217,7 @@ export default function FeaturedServicesSlider({ services }: FeaturedServicesSli
                   className="flex items-center gap-1.5 rounded-full bg-ivory text-charcoal-deep hover:bg-rose hover:text-charcoal-deep px-4 py-2.5 text-[10px] uppercase tracking-widest font-bold transition-all duration-300"
                   draggable={false}
                 >
-                  <span>Reservar</span>
+                  <span>Ver Detalle</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
@@ -179,11 +225,44 @@ export default function FeaturedServicesSlider({ services }: FeaturedServicesSli
           </div>
         ))}
       </div>
+
+      {/* Swipe/Interaction Guide Subtext */}
+      <div className="flex items-center justify-center gap-2 text-xs text-ivory-muted/40 mb-6 select-none animate-pulse">
+        <Hand className="w-3.5 h-3.5" />
+        <span>Arrastra con el mouse o usa las flechas laterales para navegar</span>
+      </div>
+
+      {/* Pagination dots indicators */}
+      <div className="flex justify-center gap-3">
+        {services.map((_, dotIdx) => (
+          <button
+            key={dotIdx}
+            onClick={() => {
+              const container = scrollRef.current;
+              if (!container) return;
+              const cards = container.querySelectorAll(".arc-card");
+              if (cards.length === 0) return;
+              const cardWidth = (cards[0] as HTMLElement).offsetWidth;
+              const gap = 32;
+              container.scrollTo({
+                left: dotIdx * (cardWidth + gap),
+                behavior: "smooth"
+              });
+            }}
+            className={`h-1.5 rounded-full transition-all duration-500 ${
+              dotIdx === activeCardIndex 
+                ? "w-8 bg-rose shadow-glass-sm" 
+                : "w-2 bg-white/10 hover:bg-white/30"
+            }`}
+            aria-label={`Ir al panel ${dotIdx + 1}`}
+          />
+        ))}
+      </div>
     </div>
   );
 }
 
-// Inline helper to merge classes since CN exists in lib/utils
+// Inline helper to merge classes since CN is imported conditionally
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 

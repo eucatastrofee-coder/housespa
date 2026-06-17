@@ -160,18 +160,8 @@ export const fallbackFAQs: FAQItem[] = [
   }
 ];
 
-// Helper to strip prices in production environments if fallback is triggered
 function applyProductionGuard(services: Service[]): Service[] {
-  const isProd = isProductionEnv();
-  const hasConfig = hasWooCommerceConfig();
-
-  // If in production and WooCommerce is not fully configured, block mock prices from displaying
-  if (isProd && !hasConfig) {
-    return services.map(s => ({
-      ...s,
-      price: "", // Empty string represents locked price in production
-    }));
-  }
+  // Production pricing guard disabled per user request to display PDF prices by default
   return services;
 }
 
