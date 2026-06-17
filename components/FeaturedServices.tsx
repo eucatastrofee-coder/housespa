@@ -8,7 +8,7 @@ export default async function FeaturedServices() {
   const displayServices = allServices.slice(0, 6);
 
   return (
-    <section className="relative w-full py-28 bg-charcoal-deep border-b border-white/[0.02] z-20 overflow-hidden">
+    <section className="relative w-full pt-28 pb-16 bg-charcoal-deep border-b border-white/[0.02] z-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">

@@ -83,7 +83,7 @@ export default function FeaturedServicesSlider({ services }: FeaturedServicesSli
     container.scrollLeft = scrollLeft.current - walk;
   };
 
-  // Click handler for navigation arrows
+  // Click handler for navigation arrows with infinite loop wrap-around
   const scroll = (direction: "left" | "right") => {
     const container = scrollRef.current;
     if (!container) return;
@@ -93,9 +93,21 @@ export default function FeaturedServicesSlider({ services }: FeaturedServicesSli
 
     const cardWidth = (cards[0] as HTMLElement).offsetWidth;
     const gap = 32;
-    const scrollAmount = (cardWidth + gap) * (direction === "left" ? -1 : 1);
-    
-    container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    const totalCards = services.length;
+
+    let targetIndex = activeCardIndex + (direction === "left" ? -1 : 1);
+
+    // Loop wrap-around index calculation
+    if (targetIndex < 0) {
+      targetIndex = totalCards - 1;
+    } else if (targetIndex >= totalCards) {
+      targetIndex = 0;
+    }
+
+    container.scrollTo({
+      left: targetIndex * (cardWidth + gap),
+      behavior: "smooth"
+    });
   };
 
   // Run on mount and updates
@@ -124,8 +136,7 @@ export default function FeaturedServicesSlider({ services }: FeaturedServicesSli
       <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between px-6 sm:px-12 z-30 pointer-events-none">
         <button
           onClick={() => scroll("left")}
-          className="w-12 h-12 rounded-full glassmorphism flex items-center justify-center text-ivory hover:text-rose hover:border-rose/50 border border-white/10 shadow-glass-sm pointer-events-auto transition-all duration-300 hover:scale-110 active:scale-95 disabled:opacity-30"
-          disabled={activeCardIndex === 0}
+          className="w-12 h-12 rounded-full glassmorphism flex items-center justify-center text-ivory hover:text-rose hover:border-rose/50 border border-white/10 shadow-glass-sm pointer-events-auto transition-all duration-300 hover:scale-110 active:scale-95"
           aria-label="Anterior masaje"
         >
           <ChevronLeft className="w-5 h-5" />
@@ -133,8 +144,7 @@ export default function FeaturedServicesSlider({ services }: FeaturedServicesSli
 
         <button
           onClick={() => scroll("right")}
-          className="w-12 h-12 rounded-full glassmorphism flex items-center justify-center text-ivory hover:text-rose hover:border-rose/50 border border-white/10 shadow-glass-sm pointer-events-auto transition-all duration-300 hover:scale-110 active:scale-95 disabled:opacity-30"
-          disabled={activeCardIndex === services.length - 1}
+          className="w-12 h-12 rounded-full glassmorphism flex items-center justify-center text-ivory hover:text-rose hover:border-rose/50 border border-white/10 shadow-glass-sm pointer-events-auto transition-all duration-300 hover:scale-110 active:scale-95"
           aria-label="Siguiente masaje"
         >
           <ChevronRight className="w-5 h-5" />
