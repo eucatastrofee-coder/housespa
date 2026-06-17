@@ -23,11 +23,11 @@ const config: Config = {
           stone: "#E6E1DA",
           muted: "#B5B0A7",
         },
-        gold: {
-          DEFAULT: "#D4AF37",
-          light: "#E5C158",
-          dark: "#B59023",
-          accent: "#C5A028",
+        rose: {
+          DEFAULT: "#B76E79",
+          light: "#D29FA6",
+          dark: "#9E5562",
+          accent: "#C27D88",
         },
       },
       fontFamily: {
@@ -38,7 +38,7 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "luxury-gradient": "linear-gradient(180deg, rgba(13,13,13,0) 0%, rgba(5,5,5,1) 100%)",
-        "gold-shimmer": "linear-gradient(90deg, #D4AF37 0%, #E5C158 50%, #B59023 100%)",
+        "rose-shimmer": "linear-gradient(90deg, #B76E79 0%, #D29FA6 50%, #9E5562 100%)",
       },
       boxShadow: {
         "luxury-sm": "0 2px 8px -1px rgba(0, 0, 0, 0.5)",

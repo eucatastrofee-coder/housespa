@@ -34,7 +34,7 @@ export default function Benefits() {
           
           {/* Left Text Column */}
           <div className="lg:col-span-5">
-            <span className="text-gold uppercase tracking-[0.25em] text-xs font-semibold block mb-4">
+            <span className="text-rose uppercase tracking-[0.25em] text-xs font-semibold block mb-4">
               ¿Por qué HouseSpa?
             </span>
             <h2 className="text-3xl md:text-5xl font-serif text-ivory tracking-tight leading-tight mb-8">
@@ -43,7 +43,7 @@ export default function Benefits() {
             <p className="text-sm md:text-base text-ivory-muted leading-relaxed font-sans mb-8">
               El tiempo es nuestro recurso más valioso. Por ello, eliminamos las fricciones del spa convencional. Sin salas de espera ruidosas, sin necesidad de salir de casa y sin perder el estado de relajación manejando de vuelta.
             </p>
-            <div className="h-[1px] w-24 bg-gold-shimmer" />
+            <div className="h-[1px] w-24 bg-rose-shimmer" />
           </div>
 
           {/* Right Benefits Column */}
@@ -59,7 +59,7 @@ export default function Benefits() {
                   transition={{ delay: idx * 0.15, duration: 0.8, ease: "easeOut" }}
                   className="flex gap-5"
                 >
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center bg-gold/5 text-gold border border-gold/10 shrink-0">
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center bg-rose/5 text-rose border border-rose/10 shrink-0">
                     <Icon className="w-5 h-5" />
                   </div>
                   <div>

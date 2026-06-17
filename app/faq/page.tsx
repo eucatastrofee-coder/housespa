@@ -8,11 +8,11 @@ export default function FAQPage() {
         
         {/* Page Header */}
         <div className="max-w-3xl mb-20">
-          <span className="text-gold uppercase tracking-[0.25em] text-xs font-semibold block mb-4">
+          <span className="text-rose uppercase tracking-[0.25em] text-xs font-semibold block mb-4">
             Centro de Ayuda
           </span>
           <h1 className="text-4xl md:text-6xl font-serif text-ivory tracking-tight leading-tight mb-6">
-            Preguntas Frecuentes <span className="block mt-2 italic font-normal text-gold/90 font-serif">Y Contraindicaciones</span>
+            Preguntas Frecuentes <span className="block mt-2 italic font-normal text-rose/90 font-serif">Y Contraindicaciones</span>
           </h1>
           <p className="text-sm md:text-base text-ivory-muted leading-relaxed font-sans max-w-xl">
             Aquí encontrarás respuestas detalladas sobre cómo reservar un masaje, nuestro filtro de seguridad y de confianza para terapeutas, y las restricciones de salud que debes revisar antes de agendar.
@@ -24,7 +24,7 @@ export default function FAQPage() {
 
         {/* Health Disclaimer Vow */}
         <div className="mt-24 p-8 rounded-3xl bg-charcoal-light border border-white/[0.03] max-w-3xl mx-auto text-center flex flex-col items-center">
-          <div className="w-12 h-12 rounded-2xl flex items-center justify-center bg-gold/5 text-gold border border-gold/15 mb-6">
+          <div className="w-12 h-12 rounded-2xl flex items-center justify-center bg-rose/5 text-rose border border-rose/15 mb-6">
             <ShieldCheck className="w-5 h-5" />
           </div>
           <h4 className="font-serif text-xl text-ivory tracking-wider mb-3">

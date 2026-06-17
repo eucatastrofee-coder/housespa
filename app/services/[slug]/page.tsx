@@ -36,7 +36,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         {/* Back Link */}
         <Link
           href="/services"
-          className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-gold hover:text-gold-light transition-colors duration-300 mb-12"
+          className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-rose hover:text-rose-light transition-colors duration-300 mb-12"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Volver a Servicios</span>
@@ -60,7 +60,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             
             {/* Vetting Vow badge */}
             <div className="p-6 rounded-2xl bg-charcoal border border-white/[0.02] flex items-start gap-4">
-              <ShieldCheck className="w-5 h-5 text-gold shrink-0 mt-0.5" />
+              <ShieldCheck className="w-5 h-5 text-rose shrink-0 mt-0.5" />
               <div className="text-xs">
                 <span className="font-semibold block text-ivory mb-1">Garantía HouseSpa</span>
                 <p className="text-ivory-muted leading-relaxed">
@@ -73,7 +73,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
           {/* Right Column: Details Content */}
           <div className="lg:col-span-6">
             {/* Category tag */}
-            <span className="text-gold uppercase tracking-[0.25em] text-xs font-semibold block mb-4">
+            <span className="text-rose uppercase tracking-[0.25em] text-xs font-semibold block mb-4">
               {service.categories.join(" • ")}
             </span>
             
@@ -85,7 +85,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             {/* Quick Metrics */}
             <div className="flex flex-wrap items-center gap-8 mb-8 border-y border-white/[0.04] py-6">
               <div className="flex items-center gap-2">
-                <Clock className="w-5 h-5 text-gold" />
+                <Clock className="w-5 h-5 text-rose" />
                 <div>
                   <span className="block text-[10px] uppercase text-ivory-muted/40 tracking-wider">
                     Duraciones
@@ -99,7 +99,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                   Inversión
                 </span>
                 {service.price ? (
-                  <span className="text-xl font-serif text-gold font-semibold">
+                  <span className="text-xl font-serif text-rose font-semibold">
                     {formatPrice(service.price)}
                   </span>
                 ) : (
@@ -130,7 +130,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
             {isHotStone && (
               <div className="p-6 rounded-2xl bg-charcoal border border-white/[0.02] flex items-start gap-4 mb-8">
-                <Sparkles className="w-5 h-5 text-gold shrink-0 mt-0.5" />
+                <Sparkles className="w-5 h-5 text-rose shrink-0 mt-0.5" />
                 <div className="text-xs">
                   <span className="font-semibold block text-ivory mb-1">Duración Fija</span>
                   <p className="text-ivory-muted leading-relaxed">
@@ -147,7 +147,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-10">
               {service.benefits.map((benefit, index) => (
                 <li key={index} className="flex items-center gap-2.5 text-xs md:text-sm text-ivory-muted">
-                  <span className="w-1.5 h-1.5 rounded-full bg-gold/70 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-rose/70 shrink-0" />
                   <span>{benefit}</span>
                 </li>
               ))}
@@ -158,7 +158,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               href={service.bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative flex items-center justify-center gap-3 overflow-hidden rounded-xl bg-gold hover:bg-gold-dark px-10 py-4 text-xs uppercase tracking-[0.25em] font-bold text-charcoal-deep shadow-luxury-md transition-all duration-300"
+              className="group relative flex items-center justify-center gap-3 overflow-hidden rounded-xl bg-rose hover:bg-rose-dark px-10 py-4 text-xs uppercase tracking-[0.25em] font-bold text-charcoal-deep shadow-luxury-md transition-all duration-300"
             >
               <span>Reservar Servicio</span>
               <ArrowRight className="w-4 h-4 text-charcoal-deep group-hover:translate-x-1.5 transition-transform duration-300" />

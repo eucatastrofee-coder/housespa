@@ -47,7 +47,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-            className="text-gold uppercase tracking-[0.3em] text-xs font-semibold mb-6 block"
+            className="text-rose uppercase tracking-[0.3em] text-xs font-semibold mb-6 block"
           >
             Wellness Concierge de Alta Gama
           </motion.span>
@@ -55,7 +55,7 @@ export default function Hero() {
           {/* Large editorial headline */}
           <h1 className="text-4xl sm:text-6xl md:text-8xl font-serif text-ivory tracking-tight leading-[1.05] mb-8 font-medium">
             El Spa De Lujo
-            <span className="block mt-2 italic font-normal text-gold/90 font-serif">En Tu Propio Hogar</span>
+            <span className="block mt-2 italic font-normal text-rose/90 font-serif">En Tu Propio Hogar</span>
           </h1>
 
           {/* Context subheader */}
@@ -77,7 +77,7 @@ export default function Hero() {
           >
             <Link
               href="/services"
-              className="group relative flex items-center justify-center gap-3 overflow-hidden rounded-full bg-gold hover:bg-gold-dark px-10 py-4 text-xs uppercase tracking-[0.25em] font-bold text-charcoal-deep shadow-luxury-md hover:shadow-luxury-lg transition-all duration-300"
+              className="group relative flex items-center justify-center gap-3 overflow-hidden rounded-full bg-rose hover:bg-rose-dark px-10 py-4 text-xs uppercase tracking-[0.25em] font-bold text-charcoal-deep shadow-luxury-md hover:shadow-luxury-lg transition-all duration-300"
             >
               <span>Ver Masajes</span>
               <ArrowRight className="w-4 h-4 text-charcoal-deep group-hover:translate-x-1.5 transition-transform duration-300" />
@@ -85,7 +85,7 @@ export default function Hero() {
 
             <Link
               href="/contact"
-              className="group relative flex items-center justify-center gap-2 overflow-hidden rounded-full border border-white/20 hover:border-gold/50 px-10 py-4 text-xs uppercase tracking-[0.25em] font-medium text-ivory transition-all duration-300"
+              className="group relative flex items-center justify-center gap-2 overflow-hidden rounded-full border border-white/20 hover:border-rose/50 px-10 py-4 text-xs uppercase tracking-[0.25em] font-medium text-ivory transition-all duration-300"
             >
               <span className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <span>Contactar</span>
@@ -108,12 +108,12 @@ export default function Hero() {
           });
         }}
       >
-        <span className="text-[10px] uppercase tracking-[0.3em] text-gold/80">Deslizar</span>
+        <span className="text-[10px] uppercase tracking-[0.3em] text-rose/80">Deslizar</span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}
         >
-          <ChevronDown className="w-5 h-5 text-gold" />
+          <ChevronDown className="w-5 h-5 text-rose" />
         </motion.div>
       </motion.div>
     </section>

@@ -32,8 +32,8 @@ export default function AllServices({ services }: AllServicesProps) {
             onClick={() => setSelectedCategory(category)}
             className={`px-6 py-2.5 rounded-full text-xs uppercase tracking-[0.2em] transition-all duration-500 border ${
               selectedCategory === category
-                ? "bg-gold border-gold text-charcoal-deep font-semibold shadow-luxury-sm"
-                : "bg-transparent border-white/10 text-ivory-muted hover:border-gold/30 hover:text-ivory"
+                ? "bg-rose border-rose text-charcoal-deep font-semibold shadow-luxury-sm"
+                : "bg-transparent border-white/10 text-ivory-muted hover:border-rose/30 hover:text-ivory"
             }`}
           >
             {category}
@@ -55,10 +55,10 @@ export default function AllServices({ services }: AllServicesProps) {
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
               key={service.slug}
-              className="group relative rounded-3xl bg-charcoal-light border border-white/[0.03] hover:border-gold/20 p-6 flex flex-col justify-between shadow-luxury-sm hover:shadow-luxury-md transition-all duration-500"
+              className="group relative rounded-3xl bg-charcoal-light border border-white/[0.03] hover:border-rose/20 p-6 flex flex-col justify-between shadow-luxury-sm hover:shadow-luxury-md transition-all duration-500"
             >
-              {/* Gold Shimmer Edge Line */}
-              <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-gold/0 to-transparent group-hover:via-gold/40 transition-all duration-700 rounded-t-3xl" />
+              {/* Rose Shimmer Edge Line */}
+              <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-rose/0 to-transparent group-hover:via-rose/40 transition-all duration-700 rounded-t-3xl" />
 
               <div>
                 {/* Service Image */}
@@ -70,19 +70,19 @@ export default function AllServices({ services }: AllServicesProps) {
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover transition-transform duration-[1000ms] ease-[0.16, 1, 0.3, 1] group-hover:scale-105"
                   />
-                  <div className="absolute top-4 left-4 z-10 glassmorphism px-3.5 py-1.5 rounded-full text-[10px] uppercase tracking-widest text-gold font-semibold border border-white/5">
+                  <div className="absolute top-4 left-4 z-10 glassmorphism px-3.5 py-1.5 rounded-full text-[10px] uppercase tracking-widest text-rose font-semibold border border-white/5">
                     {service.categories[0]}
                   </div>
                 </div>
 
                 {/* Duration & Service Metadata */}
-                <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-gold/80 mb-3 font-semibold">
+                <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-rose/80 mb-3 font-semibold">
                   <Clock className="w-3.5 h-3.5" />
                   <span>{service.duration} Minutos</span>
                 </div>
 
                 {/* Title */}
-                <h3 className="font-serif text-2xl text-ivory tracking-wider mb-4 group-hover:text-gold transition-colors duration-300">
+                <h3 className="font-serif text-2xl text-ivory tracking-wider mb-4 group-hover:text-rose transition-colors duration-300">
                   {service.title}
                 </h3>
 
@@ -99,7 +99,7 @@ export default function AllServices({ services }: AllServicesProps) {
                     Inversión
                   </span>
                   {service.price ? (
-                    <span className="text-lg font-serif text-gold font-semibold">
+                    <span className="text-lg font-serif text-rose font-semibold">
                       {formatPrice(service.price)}
                     </span>
                   ) : (
@@ -113,7 +113,7 @@ export default function AllServices({ services }: AllServicesProps) {
                   href={service.bookingUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 rounded-full border border-gold/30 hover:border-gold hover:bg-gold hover:text-charcoal-deep px-5 py-2.5 text-xs uppercase tracking-widest font-semibold text-gold transition-all duration-500"
+                  className="flex items-center gap-2 rounded-full border border-rose/30 hover:border-rose hover:bg-rose hover:text-charcoal-deep px-5 py-2.5 text-xs uppercase tracking-widest font-semibold text-rose transition-all duration-500"
                 >
                   <span>Agendar</span>
                   <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" />

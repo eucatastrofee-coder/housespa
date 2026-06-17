@@ -40,7 +40,7 @@ export default function FAQAccordion() {
           placeholder="Buscar pregunta..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full bg-charcoal-light border border-white/10 hover:border-gold/30 focus:border-gold focus:outline-none rounded-full px-6 py-3.5 text-sm text-ivory placeholder-ivory-muted/40 transition-colors duration-300"
+          className="w-full bg-charcoal-light border border-white/10 hover:border-rose/30 focus:border-rose focus:outline-none rounded-full px-6 py-3.5 text-sm text-ivory placeholder-ivory-muted/40 transition-colors duration-300"
         />
         <Search className="absolute right-6 top-1/2 -translate-y-1/2 w-4 h-4 text-ivory-muted/50" />
       </div>
@@ -53,7 +53,7 @@ export default function FAQAccordion() {
             onClick={() => setActiveTab(cat.id as any)}
             className={`px-5 py-2 rounded-full text-xs uppercase tracking-widest transition-all duration-300 border ${
               activeTab === cat.id
-                ? "bg-gold border-gold text-charcoal-deep font-semibold"
+                ? "bg-rose border-rose text-charcoal-deep font-semibold"
                 : "bg-transparent border-white/5 text-ivory-muted hover:border-white/10 hover:text-ivory"
             }`}
           >
@@ -76,10 +76,10 @@ export default function FAQAccordion() {
                 onClick={() => toggleAccordion(faq.id as number)}
                 className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none group"
               >
-                <span className="font-serif text-base sm:text-lg text-ivory tracking-wide group-hover:text-gold transition-colors duration-300">
+                <span className="font-serif text-base sm:text-lg text-ivory tracking-wide group-hover:text-rose transition-colors duration-300">
                   {faq.question}
                 </span>
-                <div className="w-8 h-8 rounded-full bg-charcoal/50 flex items-center justify-center text-gold border border-white/5 shrink-0 ml-4">
+                <div className="w-8 h-8 rounded-full bg-charcoal/50 flex items-center justify-center text-rose border border-white/5 shrink-0 ml-4">
                   {isOpen ? <Minus className="w-3.5 h-3.5" /> : <Plus className="w-3.5 h-3.5" />}
                 </div>
               </button>

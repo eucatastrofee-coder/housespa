@@ -79,7 +79,7 @@ export default function EditorialTestimonials() {
             <div key={t.author} className="flex flex-col items-start max-w-4xl">
               
               {/* Quote Category */}
-              <span className="text-gold uppercase tracking-[0.3em] text-xs font-semibold mb-6 block">
+              <span className="text-rose uppercase tracking-[0.3em] text-xs font-semibold mb-6 block">
                 Opiniones de Clientes • {t.service}
               </span>
 
@@ -97,7 +97,7 @@ export default function EditorialTestimonials() {
 
               {/* Author Details */}
               <div className="flex items-center gap-4">
-                <div className="w-8 h-[1px] bg-gold/50" />
+                <div className="w-8 h-[1px] bg-rose/50" />
                 <p className="font-sans text-sm text-ivory-warm">
                   <span className="font-semibold text-ivory">{t.author}</span>
                   <span className="text-ivory-muted">, {t.role}</span>

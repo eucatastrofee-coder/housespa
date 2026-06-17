@@ -37,7 +37,7 @@ export default function HowItWorks() {
         
         {/* Section Header */}
         <div className="max-w-xl mb-20">
-          <span className="text-gold uppercase tracking-[0.25em] text-xs font-semibold block mb-4">
+          <span className="text-rose uppercase tracking-[0.25em] text-xs font-semibold block mb-4">
             El Proceso
           </span>
           <h2 className="text-3xl md:text-5xl font-serif text-ivory tracking-tight leading-tight">
@@ -56,7 +56,7 @@ export default function HowItWorks() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ delay: idx * 0.15, duration: 1.0, ease: [0.16, 1, 0.3, 1] }}
-                className="relative p-8 rounded-3xl bg-charcoal/40 border border-white/[0.03] hover:border-gold/15 transition-colors duration-500 flex flex-col justify-between overflow-hidden shadow-luxury-sm"
+                className="relative p-8 rounded-3xl bg-charcoal/40 border border-white/[0.03] hover:border-rose/15 transition-colors duration-500 flex flex-col justify-between overflow-hidden shadow-luxury-sm"
               >
                 {/* Asymmetrical background watermark step number */}
                 <span className="absolute -top-4 -right-2 text-7xl md:text-8xl font-serif font-bold text-white/[0.01] select-none">
@@ -65,7 +65,7 @@ export default function HowItWorks() {
 
                 <div>
                   {/* Step Icon */}
-                  <div className="w-12 h-12 rounded-2xl flex items-center justify-center bg-gold/5 border border-gold/15 text-gold mb-8">
+                  <div className="w-12 h-12 rounded-2xl flex items-center justify-center bg-rose/5 border border-rose/15 text-rose mb-8">
                     <Icon className="w-5 h-5" />
                   </div>
                   
@@ -82,10 +82,10 @@ export default function HowItWorks() {
 
                 {/* Footer connector line */}
                 <div className="mt-8 pt-4 border-t border-white/[0.03] flex items-center justify-between">
-                  <span className="text-xs uppercase tracking-widest text-gold/60 font-semibold">
+                  <span className="text-xs uppercase tracking-widest text-rose/60 font-semibold">
                     Paso {step.num}
                   </span>
-                  <div className="w-2 h-2 rounded-full bg-gold/30 animate-pulse" />
+                  <div className="w-2 h-2 rounded-full bg-rose/30 animate-pulse" />
                 </div>
               </motion.div>
             );

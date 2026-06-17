@@ -34,7 +34,7 @@ export default function Trust() {
           
           {/* Text block */}
           <div className="lg:col-span-5 max-w-lg">
-            <span className="text-gold uppercase tracking-[0.25em] text-xs font-semibold block mb-4">
+            <span className="text-rose uppercase tracking-[0.25em] text-xs font-semibold block mb-4">
               Estándar de Excelencia
             </span>
             <h2 className="text-3xl md:text-5xl font-serif text-ivory tracking-tight leading-tight mb-6">
@@ -56,12 +56,12 @@ export default function Trust() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ delay: idx * 0.15, duration: 0.8, ease: "easeOut" }}
-                  className="p-6 rounded-2xl bg-charcoal-light border border-white/[0.02] hover:border-gold/25 transition-all duration-500 shadow-luxury-sm hover:shadow-luxury-md group"
+                  className="p-6 rounded-2xl bg-charcoal-light border border-white/[0.02] hover:border-rose/25 transition-all duration-500 shadow-luxury-sm hover:shadow-luxury-md group"
                 >
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center bg-gold/5 text-gold border border-gold/10 group-hover:bg-gold/10 group-hover:text-gold-light transition-all duration-300 mb-5">
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center bg-rose/5 text-rose border border-rose/10 group-hover:bg-rose/10 group-hover:text-rose-light transition-all duration-300 mb-5">
                     <Icon className="w-5 h-5" />
                   </div>
-                  <h3 className="font-serif text-lg text-ivory tracking-wider mb-2 group-hover:text-gold transition-colors duration-300">
+                  <h3 className="font-serif text-lg text-ivory tracking-wider mb-2 group-hover:text-rose transition-colors duration-300">
                     {item.title}
                   </h3>
                   <p className="text-xs md:text-sm text-ivory-muted leading-relaxed">

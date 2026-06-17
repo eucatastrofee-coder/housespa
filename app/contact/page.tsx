@@ -19,7 +19,7 @@ export default function ContactPage() {
         
         {/* Page Header */}
         <div className="max-w-3xl mb-20">
-          <span className="text-gold uppercase tracking-[0.25em] text-xs font-semibold block mb-4">
+          <span className="text-rose uppercase tracking-[0.25em] text-xs font-semibold block mb-4">
             Atención Directa
           </span>
           <h1 className="text-4xl md:text-6xl font-serif text-ivory tracking-tight leading-tight mb-6">
@@ -38,7 +38,7 @@ export default function ContactPage() {
         {/* Service Areas Coverage */}
         <div className="p-8 md:p-12 rounded-3xl bg-charcoal border border-white/[0.03] shadow-luxury-md">
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-full flex items-center justify-center bg-gold/5 text-gold border border-gold/15 shrink-0">
+            <div className="w-10 h-10 rounded-full flex items-center justify-center bg-rose/5 text-rose border border-rose/15 shrink-0">
               <MapPin className="w-5 h-5" />
             </div>
             <h2 className="font-serif text-xl sm:text-2xl text-ivory tracking-wider">
@@ -51,7 +51,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {serviceAreas.map((area) => (
               <div key={area} className="p-4 rounded-xl bg-charcoal-light border border-white/[0.02] flex items-center gap-2.5 text-xs tracking-wider text-ivory-muted">
-                <span className="w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
+                <span className="w-1.5 h-1.5 rounded-full bg-rose shrink-0" />
                 <span>{area}</span>
               </div>
             ))}

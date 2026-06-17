@@ -18,7 +18,7 @@ export default async function FeaturedServices() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-6">
           <div className="max-w-xl">
-            <span className="text-gold uppercase tracking-[0.25em] text-xs font-semibold block mb-4">
+            <span className="text-rose uppercase tracking-[0.25em] text-xs font-semibold block mb-4">
               Colección Destacada
             </span>
             <h2 className="text-3xl md:text-5xl font-serif text-ivory tracking-tight leading-tight">
@@ -27,7 +27,7 @@ export default async function FeaturedServices() {
           </div>
           <Link
             href="/services"
-            className="text-xs uppercase tracking-[0.2em] font-semibold text-gold hover:text-gold-light border-b border-gold/30 hover:border-gold pb-1.5 transition-all duration-300"
+            className="text-xs uppercase tracking-[0.2em] font-semibold text-rose hover:text-rose-light border-b border-rose/30 hover:border-rose pb-1.5 transition-all duration-300"
           >
             Ver Todos los Masajes
           </Link>
@@ -51,15 +51,15 @@ export default async function FeaturedServices() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal-deep/90 via-charcoal-deep/20 to-transparent z-10" />
                 
                 {/* Hover Quick Booking Label */}
-                <div className="absolute top-6 right-6 z-20 w-12 h-12 rounded-full glassmorphism flex items-center justify-center text-ivory border border-white/10 group-hover:bg-gold group-hover:text-charcoal-deep transition-all duration-500">
+                <div className="absolute top-6 right-6 z-20 w-12 h-12 rounded-full glassmorphism flex items-center justify-center text-ivory border border-white/10 group-hover:bg-rose group-hover:text-charcoal-deep transition-all duration-500">
                   <ArrowUpRight className="w-5 h-5" />
                 </div>
 
                 {/* Details absolute overlay */}
                 <div className="absolute bottom-8 left-8 right-8 z-20">
-                  <div className="flex items-center gap-4 text-xs text-gold uppercase tracking-[0.2em] font-semibold mb-3">
+                  <div className="flex items-center gap-4 text-xs text-rose uppercase tracking-[0.2em] font-semibold mb-3">
                     <span>{displayServices[0].categories[0]}</span>
-                    <span className="w-1.5 h-1.5 rounded-full bg-gold/50" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-rose/50" />
                     <span className="flex items-center gap-1.5">
                       <Clock className="w-3.5 h-3.5" />
                       {displayServices[0].duration} Min
@@ -77,7 +77,7 @@ export default async function FeaturedServices() {
                 </p>
                 <div className="flex items-center justify-between">
                   {displayServices[0].price ? (
-                    <span className="text-xl font-serif text-gold">
+                    <span className="text-xl font-serif text-rose">
                       {formatPrice(displayServices[0].price)}
                     </span>
                   ) : (
@@ -90,7 +90,7 @@ export default async function FeaturedServices() {
                     href={displayServices[0].bookingUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs uppercase tracking-[0.2em] font-semibold text-ivory group-hover:text-gold transition-colors duration-300"
+                    className="text-xs uppercase tracking-[0.2em] font-semibold text-ivory group-hover:text-rose transition-colors duration-300"
                   >
                     Agendar Experiencia
                   </a>
@@ -116,7 +116,7 @@ export default async function FeaturedServices() {
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal-deep/90 via-charcoal-deep/10 to-transparent z-10" />
                   
                   <div className="absolute bottom-6 left-6 right-6 z-20">
-                    <div className="flex items-center gap-3 text-xs text-gold uppercase tracking-[0.2em] font-semibold mb-2">
+                    <div className="flex items-center gap-3 text-xs text-rose uppercase tracking-[0.2em] font-semibold mb-2">
                       <Clock className="w-3 h-3" />
                       {displayServices[1].duration} Min
                     </div>
@@ -130,7 +130,7 @@ export default async function FeaturedServices() {
                     {displayServices[1].shortDescription}
                   </p>
                   {displayServices[1].price ? (
-                    <span className="text-sm font-serif text-gold font-semibold">
+                    <span className="text-sm font-serif text-rose font-semibold">
                       {formatPrice(displayServices[1].price)}
                     </span>
                   ) : (
@@ -156,7 +156,7 @@ export default async function FeaturedServices() {
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal-deep/90 via-charcoal-deep/10 to-transparent z-10" />
                   
                   <div className="absolute bottom-6 left-6 right-6 z-20">
-                    <div className="flex items-center gap-3 text-xs text-gold uppercase tracking-[0.2em] font-semibold mb-2">
+                    <div className="flex items-center gap-3 text-xs text-rose uppercase tracking-[0.2em] font-semibold mb-2">
                       <Clock className="w-3 h-3" />
                       {displayServices[2].duration} Min
                     </div>
@@ -170,7 +170,7 @@ export default async function FeaturedServices() {
                     {displayServices[2].shortDescription}
                   </p>
                   {displayServices[2].price ? (
-                    <span className="text-sm font-serif text-gold font-semibold">
+                    <span className="text-sm font-serif text-rose font-semibold">
                       {formatPrice(displayServices[2].price)}
                     </span>
                   ) : (

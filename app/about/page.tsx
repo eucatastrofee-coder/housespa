@@ -8,11 +8,11 @@ export default function AboutPage() {
         
         {/* Editorial Layout Header */}
         <div className="max-w-3xl mb-24">
-          <span className="text-gold uppercase tracking-[0.25em] text-xs font-semibold block mb-4">
+          <span className="text-rose uppercase tracking-[0.25em] text-xs font-semibold block mb-4">
             Nuestra Historia & Valores
           </span>
           <h1 className="text-4xl md:text-6xl font-serif text-ivory tracking-tight leading-tight mb-6">
-            Bienestar de Resort Exclusivo <span className="block mt-2 italic font-normal text-gold/90 font-serif">A la Puerta de tu Hogar</span>
+            Bienestar de Resort Exclusivo <span className="block mt-2 italic font-normal text-rose/90 font-serif">A la Puerta de tu Hogar</span>
           </h1>
           <p className="text-sm md:text-base text-ivory-muted leading-relaxed font-sans max-w-xl">
             HouseSpa nace con la visión de liberar a las personas de las fricciones asociadas con el cuidado personal tradicional. Creemos que la relajación no debería ir acompañada del estrés de manejar bajo el tráfico, buscar estacionamiento o compartir salas de espera.
@@ -35,7 +35,7 @@ export default function AboutPage() {
         {/* Vetting Detail & Security Focus */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start mb-24">
           <div className="lg:col-span-5">
-            <span className="text-gold uppercase tracking-[0.25em] text-xs font-semibold block mb-4">
+            <span className="text-rose uppercase tracking-[0.25em] text-xs font-semibold block mb-4">
               Estándar de Confianza
             </span>
             <h2 className="text-3xl md:text-4xl font-serif text-ivory tracking-tight leading-tight mb-6">
@@ -48,7 +48,7 @@ export default function AboutPage() {
 
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div className="p-6 rounded-2xl bg-charcoal-light border border-white/[0.02] shadow-luxury-sm">
-              <div className="w-10 h-10 rounded-full flex items-center justify-center bg-gold/5 text-gold border border-gold/10 mb-4">
+              <div className="w-10 h-10 rounded-full flex items-center justify-center bg-rose/5 text-rose border border-rose/10 mb-4">
                 <Award className="w-5 h-5" />
               </div>
               <h3 className="font-serif text-lg text-ivory tracking-wider mb-2">5+ Años de Experiencia</h3>
@@ -58,7 +58,7 @@ export default function AboutPage() {
             </div>
 
             <div className="p-6 rounded-2xl bg-charcoal-light border border-white/[0.02] shadow-luxury-sm">
-              <div className="w-10 h-10 rounded-full flex items-center justify-center bg-gold/5 text-gold border border-gold/10 mb-4">
+              <div className="w-10 h-10 rounded-full flex items-center justify-center bg-rose/5 text-rose border border-rose/10 mb-4">
                 <ShieldCheck className="w-5 h-5" />
               </div>
               <h3 className="font-serif text-lg text-ivory tracking-wider mb-2">Pruebas Psicológicas</h3>
@@ -68,7 +68,7 @@ export default function AboutPage() {
             </div>
 
             <div className="p-6 rounded-2xl bg-charcoal-light border border-white/[0.02] shadow-luxury-sm">
-              <div className="w-10 h-10 rounded-full flex items-center justify-center bg-gold/5 text-gold border border-gold/10 mb-4">
+              <div className="w-10 h-10 rounded-full flex items-center justify-center bg-rose/5 text-rose border border-rose/10 mb-4">
                 <ShieldCheck className="w-5 h-5" />
               </div>
               <h3 className="font-serif text-lg text-ivory tracking-wider mb-2">Exámenes Toxicológicos</h3>
@@ -78,7 +78,7 @@ export default function AboutPage() {
             </div>
 
             <div className="p-6 rounded-2xl bg-charcoal-light border border-white/[0.02] shadow-luxury-sm">
-              <div className="w-10 h-10 rounded-full flex items-center justify-center bg-gold/5 text-gold border border-gold/10 mb-4">
+              <div className="w-10 h-10 rounded-full flex items-center justify-center bg-rose/5 text-rose border border-rose/10 mb-4">
                 <Smile className="w-5 h-5" />
               </div>
               <h3 className="font-serif text-lg text-ivory tracking-wider mb-2">Cuidado Humano</h3>
@@ -100,7 +100,7 @@ export default function AboutPage() {
             />
           </div>
           <div>
-            <span className="text-gold uppercase tracking-[0.25em] text-xs font-semibold block mb-4">
+            <span className="text-rose uppercase tracking-[0.25em] text-xs font-semibold block mb-4">
               Por Qué No Tenemos Locales Físicos
             </span>
             <h2 className="text-2xl md:text-3xl font-serif text-ivory tracking-tight leading-tight mb-4">
@@ -109,7 +109,7 @@ export default function AboutPage() {
             <p className="text-xs md:text-sm text-ivory-muted leading-relaxed font-sans mb-6">
               Nuestra propuesta es clara: reubicar la inversión de grandes locales comerciales de lujo hacia la selección de los mejores terapeutas del país y en insumos de la más alta gama. Al eliminar el espacio físico, podemos entregar un servicio personalizado de primer nivel directamente en tu cama o recámara, brindándote paz sin prisas.
             </p>
-            <div className="flex items-center gap-3 text-xs text-gold uppercase tracking-widest font-semibold">
+            <div className="flex items-center gap-3 text-xs text-rose uppercase tracking-widest font-semibold">
               <Home className="w-4 h-4" />
               <span>Llevamos la Experiencia de Lujo a Ti</span>
             </div>

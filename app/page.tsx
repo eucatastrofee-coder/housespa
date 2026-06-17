@@ -39,7 +39,7 @@ export default function Home() {
       <section className="relative w-full py-28 bg-charcoal-light border-b border-white/[0.02] z-20">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="text-center max-w-xl mx-auto mb-20">
-            <span className="text-gold uppercase tracking-[0.25em] text-xs font-semibold block mb-4">
+            <span className="text-rose uppercase tracking-[0.25em] text-xs font-semibold block mb-4">
               Preguntas Frecuentes
             </span>
             <h2 className="text-3xl md:text-5xl font-serif text-ivory tracking-tight leading-tight mb-4">
@@ -58,7 +58,7 @@ export default function Home() {
       <section className="relative w-full py-28 bg-charcoal-deep border-b border-white/[0.02] z-20">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="text-center max-w-xl mx-auto mb-20">
-            <span className="text-gold uppercase tracking-[0.25em] text-xs font-semibold block mb-4">
+            <span className="text-rose uppercase tracking-[0.25em] text-xs font-semibold block mb-4">
               Contacto
             </span>
             <h2 className="text-3xl md:text-5xl font-serif text-ivory tracking-tight leading-tight mb-4">
@@ -87,19 +87,19 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative max-w-4xl mx-auto w-full px-6 md:px-12 z-20 text-center flex flex-col items-center">
-          <span className="text-gold uppercase tracking-[0.3em] text-xs font-semibold mb-6 block">
+          <span className="text-rose uppercase tracking-[0.3em] text-xs font-semibold mb-6 block">
             Bienestar a tu Alcance
           </span>
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif text-ivory tracking-tight leading-tight mb-8">
             Transforma Tu Hogar en un
-            <span className="block italic font-normal text-gold/90 mt-2 font-serif">Santuario de Relajación</span>
+            <span className="block italic font-normal text-rose/90 mt-2 font-serif">Santuario de Relajación</span>
           </h2>
           <p className="text-sm sm:text-base text-ivory-warm/80 max-w-lg mb-12">
             Permítete pausar. Agenda hoy y recibe a un terapeuta certificado en la tranquilidad de tu espacio privado.
           </p>
           <Link
             href="/services"
-            className="group relative flex items-center justify-center gap-3 overflow-hidden rounded-full bg-gold hover:bg-gold-dark px-10 py-4 text-xs uppercase tracking-[0.25em] font-bold text-charcoal-deep shadow-luxury-lg transition-all duration-300"
+            className="group relative flex items-center justify-center gap-3 overflow-hidden rounded-full bg-rose hover:bg-rose-dark px-10 py-4 text-xs uppercase tracking-[0.25em] font-bold text-charcoal-deep shadow-luxury-lg transition-all duration-300"
           >
             <span>Reservar Ahora</span>
             <ArrowRight className="w-4 h-4 text-charcoal-deep group-hover:translate-x-1.5 transition-transform duration-300" />

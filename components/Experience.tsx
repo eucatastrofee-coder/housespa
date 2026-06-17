@@ -143,7 +143,7 @@ export default function Experience() {
           
           {/* Scroll block 1 */}
           <div ref={text1Ref} className="absolute flex flex-col items-center max-w-3xl pointer-events-none">
-            <span className="text-gold uppercase tracking-[0.3em] text-xs font-semibold mb-4">
+            <span className="text-rose uppercase tracking-[0.3em] text-xs font-semibold mb-4">
               La Filosofía
             </span>
             <h3 className="text-3xl sm:text-5xl font-serif text-ivory tracking-wider leading-tight">
@@ -156,7 +156,7 @@ export default function Experience() {
 
           {/* Scroll block 2 */}
           <div ref={text2Ref} className="absolute flex flex-col items-center max-w-3xl pointer-events-none">
-            <span className="text-gold uppercase tracking-[0.3em] text-xs font-semibold mb-4">
+            <span className="text-rose uppercase tracking-[0.3em] text-xs font-semibold mb-4">
               Los Materiales
             </span>
             <h3 className="text-3xl sm:text-5xl font-serif text-ivory tracking-wider leading-tight">
@@ -169,7 +169,7 @@ export default function Experience() {
 
           {/* Scroll block 3 */}
           <div ref={text3Ref} className="absolute flex flex-col items-center max-w-3xl pointer-events-none">
-            <span className="text-gold uppercase tracking-[0.3em] text-xs font-semibold mb-4">
+            <span className="text-rose uppercase tracking-[0.3em] text-xs font-semibold mb-4">
               El Resultado
             </span>
             <h3 className="text-3xl sm:text-5xl font-serif text-ivory tracking-wider leading-tight">
