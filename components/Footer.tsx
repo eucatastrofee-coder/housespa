@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, Phone, Clock, ShieldCheck } from "lucide-react";
+import { Mail, Phone, Clock, ShieldCheck, Facebook, Instagram } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -28,6 +28,28 @@ export default function Footer() {
             <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-rose/80 bg-charcoal-light border border-white/[0.03] rounded-full py-2 px-4 w-fit">
               <ShieldCheck className="w-4 h-4 text-rose" />
               <span>Terapeutas Certificados & Evaluados</span>
+            </div>
+
+            {/* Social Media Icons */}
+            <div className="flex items-center gap-4 mt-8">
+              <a
+                href="https://www.facebook.com/profile.php?id=61556339878477"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-charcoal-light border border-white/5 flex items-center justify-center text-ivory-muted hover:text-rose hover:border-rose/40 hover:scale-110 active:scale-95 transition-all duration-300"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-4 h-4" />
+              </a>
+              <a
+                href="https://www.instagram.com/house_spamx"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-charcoal-light border border-white/5 flex items-center justify-center text-ivory-muted hover:text-rose hover:border-rose/40 hover:scale-110 active:scale-95 transition-all duration-300"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-4 h-4" />
+              </a>
             </div>
           </div>
 
