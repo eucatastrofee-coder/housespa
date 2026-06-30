@@ -128,10 +128,10 @@ export default function Footer() {
             <Link href="/" className="text-xs text-ivory-muted/50 hover:text-rose transition-colors">
               Términos y condiciones
             </Link>
-            <Link href="/" className="text-xs text-ivory-muted/50 hover:text-rose transition-colors">
+            <Link href="/aviso-de-privacidad" className="text-xs text-ivory-muted/50 hover:text-rose transition-colors">
               Aviso de privacidad
             </Link>
-            <Link href="/" className="text-xs text-ivory-muted/50 hover:text-rose transition-colors">
+            <Link href="/politica-de-cancelacion" className="text-xs text-ivory-muted/50 hover:text-rose transition-colors">
               Política de Cancelación
             </Link>
             <Link href="/" className="text-xs text-ivory-muted/50 hover:text-rose transition-colors">
