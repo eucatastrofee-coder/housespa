@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ArrowRight } from "lucide-react";
+import { Menu, X, ArrowRight, Facebook, Instagram } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
@@ -87,8 +87,31 @@ export default function Navbar() {
             })}
           </nav>
 
-          {/* CTA Book Now */}
-          <div className="hidden md:flex items-center">
+          {/* CTA Book Now & Socials */}
+          <div className="hidden md:flex items-center gap-6">
+            <div className="flex items-center gap-4">
+              <a
+                href="https://www.facebook.com/profile.php?id=61556339878477"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-ivory/70 hover:text-rose hover:scale-110 active:scale-95 transition-all duration-300"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-4 h-4" />
+              </a>
+              <a
+                href="https://www.instagram.com/house_spamx"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-ivory/70 hover:text-rose hover:scale-110 active:scale-95 transition-all duration-300"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-4 h-4" />
+              </a>
+            </div>
+
+            <div className="h-5 w-[1px] bg-white/10" />
+
             <Link
               href="/services"
               className="group relative flex items-center gap-2 overflow-hidden rounded-full bg-transparent border border-rose/40 hover:border-rose px-6 py-2.5 text-xs uppercase tracking-[0.2em] font-medium text-ivory transition-all duration-300"
@@ -156,6 +179,33 @@ export default function Navbar() {
                   <span>Reservar Ahora</span>
                   <ArrowRight className="w-4 h-4 text-charcoal-deep" />
                 </Link>
+              </motion.div>
+
+              {/* Social links in mobile menu */}
+              <motion.div
+                initial={{ y: 30, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: navLinks.length * 0.1 + 0.2, duration: 0.5 }}
+                className="mt-6 flex items-center justify-center gap-6"
+              >
+                <a
+                  href="https://www.facebook.com/profile.php?id=61556339878477"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-rose border border-rose/15 hover:border-rose/40 hover:scale-110 active:scale-95 transition-all duration-300"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="w-4 h-4" />
+                </a>
+                <a
+                  href="https://www.instagram.com/house_spamx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-rose border border-rose/15 hover:border-rose/40 hover:scale-110 active:scale-95 transition-all duration-300"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="w-4 h-4" />
+                </a>
               </motion.div>
             </nav>
           </motion.div>
