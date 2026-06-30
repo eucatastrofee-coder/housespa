@@ -108,7 +108,7 @@ export default function LiabilityDisclaimerPage() {
             Aviso de Responsabilidad Limitada
           </h1>
           <p className="text-xs uppercase tracking-widest text-ivory-muted/60 font-sans">
-            HouseSpa.mx — Vigente a partir de julio 2025
+            HouseSpa.mx — Vigente a partir de julio 2026
           </p>
         </div>
 
@@ -158,7 +158,7 @@ export default function LiabilityDisclaimerPage() {
           </div>
 
           <div className="mt-16 pt-8 border-t border-white/5 text-[11px] text-ivory-muted/40 text-center leading-relaxed">
-            HouseSpa.mx — Ciudad de México, México. Última actualización: julio 2025.
+            HouseSpa.mx — Ciudad de México, México. Última actualización: julio 2026.
           </div>
         </div>
 
