@@ -134,8 +134,8 @@ export default function Footer() {
             <Link href="/politica-de-cancelacion" className="text-xs text-ivory-muted/50 hover:text-rose transition-colors">
               Política de Cancelación
             </Link>
-            <Link href="/" className="text-xs text-ivory-muted/50 hover:text-rose transition-colors">
-              Renuncia de Responsabilidad
+            <Link href="/aviso-de-responsabilidad" className="text-xs text-ivory-muted/50 hover:text-rose transition-colors">
+              Aviso de Responsabilidad limitada
             </Link>
           </div>
         </div>
