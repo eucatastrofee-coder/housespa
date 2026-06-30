@@ -85,7 +85,7 @@ export default function CancellationPolicyPage() {
             Política de Cancelación
           </h1>
           <p className="text-xs uppercase tracking-widest text-ivory-muted/60 font-sans">
-            HouseSpa Ciudad de México — Vigente a partir de julio 2025
+            HouseSpa Ciudad de México — Vigente a partir de julio 2026
           </p>
         </div>
 
