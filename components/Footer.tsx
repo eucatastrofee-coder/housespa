@@ -124,12 +124,18 @@ export default function Footer() {
           <p className="text-xs text-ivory-muted/50 tracking-wider">
             &copy; {currentYear} HouseSpa. Todos los derechos reservados.
           </p>
-          <div className="flex gap-6">
-            <Link href="/faq" className="text-xs text-ivory-muted/50 hover:text-rose transition-colors">
-              Políticas de Cancelación
+          <div className="flex flex-wrap gap-x-6 gap-y-2 justify-center md:justify-end">
+            <Link href="/" className="text-xs text-ivory-muted/50 hover:text-rose transition-colors">
+              Términos y condiciones
             </Link>
-            <Link href="/about" className="text-xs text-ivory-muted/50 hover:text-rose transition-colors">
-              Filtro de Seguridad
+            <Link href="/" className="text-xs text-ivory-muted/50 hover:text-rose transition-colors">
+              Aviso de privacidad
+            </Link>
+            <Link href="/" className="text-xs text-ivory-muted/50 hover:text-rose transition-colors">
+              Política de Cancelación
+            </Link>
+            <Link href="/" className="text-xs text-ivory-muted/50 hover:text-rose transition-colors">
+              Renuncia de Responsabilidad
             </Link>
           </div>
         </div>
