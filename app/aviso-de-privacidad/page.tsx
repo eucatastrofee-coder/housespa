@@ -115,7 +115,7 @@ export default function PrivacyPolicyPage() {
             Aviso de Privacidad
           </h1>
           <p className="text-xs uppercase tracking-widest text-ivory-muted/60 font-sans">
-            HouseSpa Ciudad de México — Vigente a partir de julio 2025
+            HouseSpa Ciudad de México — Vigente a partir de julio 2026
           </p>
         </div>
 
@@ -165,7 +165,7 @@ export default function PrivacyPolicyPage() {
           </div>
 
           <div className="mt-16 pt-8 border-t border-white/5 text-[11px] text-ivory-muted/40 text-center leading-relaxed">
-            Última actualización: julio 2025. Ciudad de México, México.
+            Última actualización: julio 2026. Ciudad de México, México.
           </div>
         </div>
 
