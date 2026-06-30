@@ -135,7 +135,7 @@ export default function Footer() {
               Política de Cancelación
             </Link>
             <Link href="/aviso-de-responsabilidad" className="text-xs text-ivory-muted/50 hover:text-rose transition-colors">
-              Aviso de Responsabilidad limitada
+              Aviso de Responsabilidad Limitada
             </Link>
           </div>
         </div>
