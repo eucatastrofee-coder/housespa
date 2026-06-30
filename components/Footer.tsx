@@ -125,7 +125,7 @@ export default function Footer() {
             &copy; {currentYear} HouseSpa. Todos los derechos reservados.
           </p>
           <div className="flex flex-wrap gap-x-6 gap-y-2 justify-center md:justify-end">
-            <Link href="/" className="text-xs text-ivory-muted/50 hover:text-rose transition-colors">
+            <Link href="/terminos-y-condiciones" className="text-xs text-ivory-muted/50 hover:text-rose transition-colors">
               Términos y condiciones
             </Link>
             <Link href="/aviso-de-privacidad" className="text-xs text-ivory-muted/50 hover:text-rose transition-colors">
