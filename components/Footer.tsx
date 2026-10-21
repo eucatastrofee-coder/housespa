@@ -139,6 +139,14 @@ export default function Footer() {
             </Link>
           </div>
         </div>
+
+        {/* Credits */}
+        <p className="mt-6 text-center text-xs text-ivory-muted/50 tracking-wider">
+          Hecho con <span aria-label="cerebro">🧠</span> por{" "}
+          <a href="https://webby.mx" target="_blank" rel="noopener" className="text-ivory-muted hover:text-rose transition-colors">
+            <strong>Webby</strong>
+          </a>
+        </p>
       </div>
     </footer>
   );
