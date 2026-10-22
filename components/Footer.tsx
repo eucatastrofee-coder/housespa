@@ -142,7 +142,7 @@ export default function Footer() {
 
         {/* Credits */}
         <p className="mt-6 text-center text-xs text-ivory-muted/50 tracking-wider">
-          Hecho con <span aria-label="cerebro">🧠</span> por{" "}
+          Desarrollado con <span aria-label="cerebro">🧠</span> por{" "}
           <a href="https://webby.mx" target="_blank" rel="noopener" className="text-ivory-muted hover:text-rose transition-colors">
             <strong>Webby</strong>
           </a>
