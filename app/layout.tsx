@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SmoothScroll from "@/components/SmoothScroll";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "HouseSpa | Masajes de Lujo a Domicilio",
@@ -56,6 +57,7 @@ export default function RootLayout({
             <WhatsAppButton />
           </div>
         </SmoothScroll>
+        <Analytics />
       </body>
     </html>
   );
